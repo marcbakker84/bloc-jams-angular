@@ -49,23 +49,33 @@ html {
 
 /*body*/
 body {
-    background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+    background-color: #00BCD4;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    font-family: 'Open sans';
+    font-family: 'roboto';
     color: white;
     min-height: 100%;
     padding-bottom: 200px;
+    -webkit-font-smoothing: antialiased;
 }
 
 /*nav*/
 .navbar {
     position: relative;
     padding: 0.5rem;
-    background-color: rgba(101,18,95,0.5);
+    background-color: #0097A7;
     z-index: 1;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.navbar .logo-img {
+    height: 35px;
+    padding: 7px 0;
+    margin: 11px 0;
 }
 
 .navbar .logo {
@@ -79,9 +89,10 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100px;
+    height: 77px;
     color: white;
     text-decoration: none;
+    padding-right: 2rem;
 }
 
 .links-container .navbar-link {
@@ -92,16 +103,16 @@ body {
     padding-right: 1rem;
     vertical-align: middle;
     color: white;
-    font-size: 0,625rem;
+    font-size: 1.3em;
     letter-spacing: 0.05rem;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 300;
+    text-transform: lowercase;
     text-decoration: none;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .links-container .navbar-link:hover {
-    color: rgb(233,50,117);
+    color: #B2EBF2;
 }
 
 .clearfix::before,
