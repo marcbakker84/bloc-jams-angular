@@ -115,6 +115,30 @@ body {
     color: #B2EBF2;
 }
 
+.help {
+    display: table;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #0097A7;
+    background-color: #B2EBF2;
+    color: #0097A7;
+    text-align: center;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.help span {
+    font-size: 2.3em;
+    font-weight: 700;
+    display: table-cell;
+    vertical-align: middle;
+}
+
 .clearfix::before,
 .clearfix::after {
    content: " ";
