@@ -1,6 +1,6 @@
 (function() {
      function LandingCtrl() {
-              this.heroTitle = "DevTunes. Keeps you coding.";
+        this.heroTitle = "DevTunes. Keeps you coding.";
      }
  
      angular
