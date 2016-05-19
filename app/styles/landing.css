@@ -34,11 +34,14 @@ body.landing {
     position: relative;
     padding: 2rem;
     text-align: center;
-     opacity: 1;
+    opacity: 1;
+    font-weight: 300;
+    font-size: 1.25rem;
 }
 
 .point .point-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .ion-music-note, .ion-radio-waves, .ion-iphone {
