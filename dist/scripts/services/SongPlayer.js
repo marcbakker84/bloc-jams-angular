@@ -88,6 +88,13 @@
         SongPlayer.currentTime = null;
         
         /**
+        * @desc Current volume (0-100) of currently playing song
+        * @type {Number}
+        */
+        SongPlayer.volume = 60;
+        
+        
+        /**
         * @method SongPlayer.play
         * @desc Checks the status of the currently playing song and invokes playSong and/or setSong
         * @param {object} song
@@ -156,6 +163,18 @@
         SongPlayer.setCurrentTime = function(time) {
             if (currentBuzzObject) {
                 currentBuzzObject.setTime(time);
+            }
+        };
+        
+        /**
+        * @function setVolume
+        * @desc Set volume of currently playing song
+        * @param {value} of the slider between 0 - 100
+        */
+        
+        SongPlayer.setVolume = function(value) {
+            if (currentBuzzObject) {
+                currentBuzzObject.setVolume(value);
             }
         };
         
