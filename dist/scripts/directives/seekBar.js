@@ -46,6 +46,12 @@
                     return {marginLeft: percentString()};    
                 };
                 
+                var notifyOnChange = function(newValue) {
+                    if (typeof scope.onChange === 'function') { //JUKE --> when do you add this kind of checks? 
+                        scope.onChange({value: newValue});
+                    }
+                };
+                
                 scope.onClickSeekBar = function(event) {
                     var percent = calculatePercent(seekBar, event);
                         scope.value = percent * scope.max;
@@ -62,11 +68,7 @@
                         //scope.value = percent * scope.max;
                 });
                     
-                var notifyOnChange = function(newValue) {
-                    if (typeof scope.onChange === 'function') { //JUKE --> when do you add this kind of checks? 
-                        scope.onChange({value: newValue});
-                    }
-                };
+                
                      
                  $document.bind('mouseup.thumb', function() {
                     $document.unbind('mousemove.thumb');
